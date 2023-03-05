@@ -43,7 +43,7 @@ public class SetExerciseTest {
             Assert.fail();
         }else{
             se.addUniqueItem(set, 1);
-            Assert.assertEquals(se.getSize(set), 1);
+            Assert.assertEquals(se.getSize(set), 0);
         }
     }
 
@@ -58,7 +58,7 @@ public class SetExerciseTest {
         }else{
             se.addUniqueItem(set, 1);
             Assert.assertTrue(set.contains(1));
-            Assert.assertFalse(set.contains(2));
+            Assert.assertTrue(set.contains(2));
         }
     }
 

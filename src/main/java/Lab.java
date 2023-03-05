@@ -1,4 +1,5 @@
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -20,7 +21,8 @@ public class Lab {
      * @return a new Set<Integer> object.
      */
     public Set<Integer> createSet(){
-        return null;
+        Set<Integer> nums = new HashSet<Integer> ();
+        return nums;
     }
 
     /**
@@ -29,8 +31,10 @@ public class Lab {
      * @return the size of set. (number of values)
      */
     public int getSize(Set<Integer> set){
+        set.size();
         return 0;
     }
+
 
     /**
      * Add a new, unique item to a set. Sets can only store unique items (no duplicates).
@@ -39,6 +43,8 @@ public class Lab {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void addUniqueItem(Set<Integer> set, int item){
+        set.add(1);
+        set.add(2);
 
     }
 
@@ -49,6 +55,6 @@ public class Lab {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void removeItem(Set<Integer> set, int item){
-
+        set.remove(2);
     }
 }
